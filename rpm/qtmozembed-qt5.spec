@@ -23,11 +23,13 @@ BuildRequires:  pkgconfig(nspr) >= 4.13.1
 %if %{system_pixman}
 BuildRequires:  pkgconfig(pixman-1) >= 0.19.2
 %endif
-BuildRequires:  xulrunner-qt5-devel >= %{min_xulrunner_version}
+#BuildRequires:  xulrunner-qt5-devel >= %{min_xulrunner_version}
+BuildRequires:  xulrunner-qt5-devel
 BuildRequires:  qt5-default
 BuildRequires:  qt5-qttools
 BuildRequires:  pkgconfig(systemsettings) >= 0.5.25
-Requires:       xulrunner-qt5 >= %{min_xulrunner_version}
+#Requires:       xulrunner-qt5 >= %{min_xulrunner_version}
+Requires:       xulrunner-qt5
 Requires:       nemo-qml-plugin-systemsettings >= 0.5.25
 Requires:       embedlite-components-qt5 >= 1.22.32
 
